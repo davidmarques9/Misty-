@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "misty-api-nucleo"
+version = "0.1.0"
+description = "Camada de comunicacao HTTP/WebSocket para o Misty II"
+requires-python = ">=3.10"
+dependencies = ["requests>=2.31,<3", "websocket-client>=1.7,<2", "python-dotenv>=1.0,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

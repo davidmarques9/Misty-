@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: misty-api-nucleo
+Version: 0.1.0
+Summary: Camada de comunicacao HTTP/WebSocket para o Misty II
+Requires-Python: >=3.10
+Requires-Dist: requests<3,>=2.31
+Requires-Dist: websocket-client<2,>=1.7
+Requires-Dist: python-dotenv<2,>=1.0
+Provides-Extra: dev
+Requires-Dist: pytest<9,>=8; extra == "dev"
